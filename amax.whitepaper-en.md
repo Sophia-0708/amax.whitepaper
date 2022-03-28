@@ -26,7 +26,7 @@
   - [Technology roadmap](#technology-roadmap)
   - [Reference](#reference)
 ## Introduction
-Looking back at the development history of blockchain technology, starting with distributed ledger, to smart contract technlogy that supports all sorts of application logic, and onto providing layer-0 & layer-1 SDK technology for quickly building brand new blockchains, and building layer-2 to solve problems that couldn't be solved in layer-1 technoloy, as well as bi-directional cross-chain technology, one can easily come to a conclusion that blockchain is becoming more sophisticated in order to fufill growing needs of decentraliazed applications aspired by blockchain users.
+Looking back on the development history of blockchain technology, starting with distributed ledger, to smart contract technlogy that supports all sorts of application logic, and onto providing layer-0 & layer-1 SDK technology for quickly building brand new blockchains, and building layer-2 to solve problems that couldn't be solved in layer-1 technoloy, as well as bi-directional cross-chain technology, one can easily come to a conclusion that blockchain is becoming more sophisticated in order to fufill growing needs of decentraliazed applications aspired by blockchain users.
 
 However, as of today, other than promoting security, reliability and decentralization, there hasn't been a single blockchain technology that can sufficiently meet the following requirements:
 - massively parallel processing
@@ -57,18 +57,18 @@ Armonia as a multichain platform has adopted a unique mother-children-chain mode
 <img src="./assets/Armonia-Multichain-Arch_en.png" width=800 />
 
 **Core design**：
-- `AMC` adopts an innovative consensus algorithm called `APOS` and high-performant WASM virtual machine and requires extremely low transaction cost. `AMC` also adopts account name instead of address based onchain addressing model;
+- `AMC` adopts an innovative consensus algorithm called `APOS` and high-performance WASM virtual machine so it requires extremely low transaction cost. `AMC` also adopts account name instead of address-based on-chain addressing model;
 - `ACC` chains can be built with layer-0 & layer-1 template modules in a very quick manner;
-- Other public chains like Bitcoin or Ethereum can be also included into the multichain environment to co-exist with other `ACC` chains;
+- Other public chains like Bitcoin or Ethereum can be also included into the multichain environment to co-exist with `ACC` chains;
 - All chains within Armonia multichain environment can mirror or bridge their assets from one to another;
   
 ### Multichain model
 
-With Armonia's layer-0 and layer-1 template software and SDK, one can rapidly build many versatile child chains that can have their uniqueness in consensus algorithm, block interval, virtual machine and finality choices...etc, so that they can meet various needs from the ecosystem.
+With Armonia's layer-0 and layer-1 template software and SDK, one can rapidly build many versatile child chains with their uniqueness in consensus algorithm, block interval, virtual machine and finality choices, etc., so that they can meet various needs from the ecosystem.
 
-Armonia Child Chain or `ACC` can have their own native tokens or directly utilize `AMAX` which can be bridged from `AMC` chain. It is highly encouraged to implement `ACC` that runs on a gas model and utilizes `AMAX` for gas or transaction fees payment. In this way, all `ACC` chains will help to add values to `AMC` and thus the entire ecosystem.
+Armonia Child Chain or `ACC` can have their own native tokens or directly utilize `AMAX` which can be bridged from `AMC` chain. It is highly encouraged to implement `ACC` that runs on a gas model and utilizes `AMAX` for gas or transaction fees payment. In this way, all `ACC` chains will help to add values to `AMC` as well as the entire ecosystem.
 
-Basically every single blockchain can be highly abstracted or characterized as a capital letter T: the horizontal line stands for all transaction and block data which will be broadcasted throughout the network; the vertical line by contrast represents the state database (which includes account balance state) that will be only constructed after execution of transactions produced from the horizontal line. Further more, dotted line circle is to represent an open and public blockchain network while solid line circle is for private blockchains）`AMC` can serve as trust anchor to all other `ACC` chains which altogehter form the following multichain universe：
+Basically every single blockchain can be highly abstracted or characterized as a capital letter T: the horizontal line stands for all transaction and block data which will be broadcasted throughout the network; the vertical line represents the state database (including account balance state) that will only be constructed after execution of transactions produced from the horizontal line. Furthermore, dotted line circle represents an open and public blockchain network while solid line circle stands for private blockchains. `AMC` can serve as trust anchor to all other `ACC` chains which altogehter form the following multichain universe：
 
 <img src="./assets/Armonia-Multichain-Forest_en.png" title="Armonia Multichain Universe" width=800 />
 
@@ -77,9 +77,9 @@ Basically every single blockchain can be highly abstracted or characterized as a
 Armonia multichain system can be layered as follows:
 <img src="./assets/multichain-layered-arch.png" width=800 />
 
-In this design, Armonia will provide layer-0 base component to service the transcation routing capability, which means all node software can listen to a common network port for various single chains but the transcation routing component will determine whether or not the arriving transactions will be further processed in the upper layer of the node software. Through this destination chain filtering process, transactions can have one-to-one, one-to-many and one-to-all modes of accessbility to all chains within Armonia network.
+In this design, Armonia will provide layer-0 based component to achieve the transcation routing capability, which means all node software can acquire information from a common network port for various single chains but only the transcation routing component can determine whether or not the arriving transactions will be further processed in the upper layer of the node software. Through this destination chain filtering process, transactions can have one-to-one, one-to-many and one-to-all modes of accessbility to all chains within Armonia network.
 
-Furthermore, Armonia will also provide layer-0, layer-1 template components and their corresponding SDK such that ecosystem developers can quickly implement a blockchain system by choosing the ready blockchain building blocks with personalized configurations for each chain. In so doing, all child chains can easily interact with each other.
+Furthermore, Armonia will provide layer-0, layer-1 template components and their corresponding SDK so that ecosystem developers can quickly implement a blockchain system by choosing the ready blockchain building blocks with personalized configurations for each chain. In doing so, all child chains can easily interact with each other.
 
 ### Multichain transaction routing
 
