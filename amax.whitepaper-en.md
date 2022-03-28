@@ -86,37 +86,37 @@ Furthermore, Armonia will also provide layer-0, layer-1 template components and 
 As the common building block for layer-0 in Armonia SDK, it serves to support three types of transaction routing in Armonia multichain system: 1) unicast; 2) multicast; 3) broadcast:
 <img src="./assets/tx_multichain_comm_en.png" width=800 />
 
-That means, one user can intiate a blockchain transaction that can reach one single chain or a group of prescribed chains or even to every chain within Armonia multichain network. That may be helpful or even critical in a coordinated operation in the multichain network. But of course when there is any chain-level issue like lack of gas fees that could still cause the transaction execution failure, which could create an inconsistent behavior for various chains being targeted by the transaction and this problem has to be addressed rather at the application level.
+It means one user can intiate a blockchain transaction that reaches one single chain or a group of prescribed chains or even to every chain within Armonia multichain network. That may be helpful or even critical in a coordinated operation in the multichain network. However, when there is any chain-level issue like lack of gas fees that may cause the transaction execution failure, an inconsistent behavior may be created, leading to various chains being targeted by the transaction. This problem has to be addressed at the application level.
 
 <img src="./assets/tx_multichain_network.png" width=800 />
 
 ### Multichain enabled applicaiton scenariors
-In Armonia's multichain empowered ecosystem, numerous application scenarios can be built including the following:
+In Armonia's multichain-empowered ecosystem, numerous application scenarios can be built, including the following:
 - issue, mint, transfer and exchange all sorts of crypto assets in `AMC` chain;
 - build incentive mining pools in `AMC` to promote Armonia ecosystem development;
-- complete KYC/KYB for `AMC` accounts in order to access those smart contracts that have regulation compilance requirements;
-- create one or mulitple DEX `ACC` chains to support order-book based exchange with high-performance and low-laytency capabilities;
-- create one or multiple prediction `ACC` chains to achieve both performance and privacy;
+- complete KYC/KYB for `AMC` accounts in order to access those smart contracts that have regulation compliance requirements;
+- create one or mulitple DEX `ACC` chains to support order-book based exchanges with high-performance and low-latency capabilities;
+- create one or multiple prediction `ACC` chains to achieve both performance and privacy; and
 - create one or mulitple GameFi, NFT and metaverse application chains;
 
 ### Cross-chain in Armonia's multichain universe
 
-With multiple chains co-existing in Armonia's multichain universe, there will be interaction i.e. cross-chain activities between `AMC` and `ACC` chains as well other public chains like bitcoin and ethereume. Armonia endeavors to build following cross-chain capability for blockchain users:
+With multiple chains co-existing in Armonia's multichain universe, there will be interaction i.e. cross-chain activities between `AMC` and `ACC` chains as well as other public chains like Bitcoin and Ethereume. Armonia endeavors to build following cross-chain capabilities for blockchain users:
 
 <img src="./assets/armonia-multichain-scope_en.png" title="Armonia multichain and cross-chain relationship" width=800 />
 
 
 ### Cross-chain mechanism
 
-In Armonia's multichain universe, the ability of "moving" an asset from one chain to another can be critical for many users or asset owners. If the originating asset resides in its home chain whereby the assets are issued from, "moving" the asset means locking an asset in the oringating chain and minting the assets from the destination chain and trasferring the assets to the desginated account. But if the orignating asset resides in non-native chain, "moving" the asset means destroying or burning the asset from the originating chain and unlocking the asset and sending back to the designated account from the home chain to the asset. This two-way moving activities that happen between either two chains within Armonia's multichain universe are so-called cross-chain transactions. 
+In Armonia's multichain universe, the ability of "moving" an asset from one chain to another can be critical for many users or asset owners. If the originating asset resides in its home chain whereby the assets are issued from, "moving" the asset means locking an asset in the oringating chain and minting the assets from the destination chain and transferring the assets to the designated account. However, if the orignating asset resides in a non-native chain, "moving" the asset means destroying or burning the asset from the originating chain, unlocking the asset and sending the designated account from the home chain to the asset. This two-way moving activities that happen between either two chains within Armonia's multichain universe are so-called cross-chain transactions. 
 
-Through cross-chain tranasctions, asset owner can move asset from one chain to another, which greatly increase the liqudity and usability of the asset. Meanwhile, it can suffice all kinds of application scenarios that are happening in the entire ecosystem.
+Through cross-chain transactions, asset owners can move assets from one chain to another, which greatly increase the liqudity and usability of assets. Meanwhile, it suffices all kinds of application scenarios that are happening in the entire ecosystem.
 
 However, following problems must be solved in order to achieve bi-directionary, reliable and efficient cross-chain transactions:
-- how to ensure the finality of asset moving transactions onchain?
-- how to synchronize the asset moving result from one chain to another?
-- how to ensure transactions invovled in cross-chain workflow are effective and accurate?
-- how to prevent malicous users from stealing away the asset during the cross-chain transactions?
+- how to ensure the finality of asset-moving transactions?
+- how to synchronize the asset-moving result from one chain to another?
+- how to ensure transactions involved in cross-chain workflow are effective and accurate?
+- how to prevent malicious users from stealing away the asset during the cross-chain transaction?
 - how to prevent the mirroring asset from being overly inflated?
   
 At the same time, one important question that remains to be answered is:
@@ -135,22 +135,22 @@ By addressing the above problems，one hybrid and reliable cross-chain solution 
 | cross-chain asset | `AS` |
 | DAO for asset-mirrored chain | `DAO` |
 
-Note: Distribution of assets from `A` chain has been determined by its consenus mechanism, tokenomics and ecosystem. Howver, asset to be mirrored to its destination chain `B` must be managed within a `ERC20` token contract for its issue, mint, transfer and burn etc activities and these will be governed by its `DAO` body.
+Note: Distribution of assets from `A` chain has been determined by its consensus mechanism, tokenomics and ecosystem. However, the asset to be mirrored to its destination chain `B` must be managed within a `ERC20` token contract for its issuing, minting, transferring, burning, etc. and these activities will be governed by its `DAO` body.
 
-* Preparation work
+* Preparation
 1. Deploy a smart contract `amax.xswap` onto `M` chain for cross-chain management;
 2. Deploy a smart contract `as_custody` onto `A` chain to lock cross-chain assets;
 3. Deploy a smart contract `as_erc20` onto `B` for issuing, minting and destroying mirrored assets, governed by its DAO body.
 
 * Workflow
-1. `BO` approaches `DAO` and request for briding assets from `B`, say 1 mn `AS` and sends them into `as_custody`. Then `DAO` mints 1 mn AS from `as_erc20` and transfer them to `BO`;
+1. `BO` approaches `DAO`, requests for bridging assets from `B`, say 1 mn `AS` and sends them into `as_custody`. Then `DAO` mints 1 mn AS from `as_erc20` and transfer them to `BO`;
 2. `BO` places orders on `amax.xswap` with `$AMAX` as escrow that is locked into the same contract;
-3. `BU` finds the orders from `amax.xswap` they want to take and they can take them partially or whoely;
+3. `BU` finds the orders they want to take from `amax.xswap` and they can take them partially or entirely;
 4. `BU` sends `AS` from `A` chain to `BO`'s account and posts its transaction ID to `amax.xswap` as a matter of payment proof;
-5. `BO` sends `AS` from `B` chain to `BU`'s account upon notification of order status change and close the order with `BU`'s confirmation;
+5. `BO` sends `AS` from `B` chain to `BU`'s account upon notification of order status change and closes the order with `BU`'s confirmation;
    
 Note:
-1. when there's any dispute about swap orders, `DAO` will be invovled to do the arbitrage to ensure the complete clousure of the orders;
+1. when there's any dispute about swap orders, `DAO` will be involved to arbitrate to ensure the complete clousure of the orders;
 2. `AMC` can be also `A` or `B` chain.
 
 The detailed workflow diagram:
