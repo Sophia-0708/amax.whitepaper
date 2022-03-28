@@ -268,9 +268,9 @@ The overall allocation of `$AMAX` tokens are as follows:
 
 ### Mining of Things (MoT)
 
-It is in Armonia's belief that every activity that helps to add value to the entire Armonia ecosystem and community shall be rewarded and mining is a good way to support the activities and rewarding to be conducted in smart-contract based mining pools.
+It is in Armonia's belief that every activity that helps to add value to the entire Armonia ecosystem and community shall be rewarded, and mining is a good way to support the activities and is rewarding to be conducted in smart-contract based mining pools.
 
-In general following types of mining pools are existing:
+In general, following types of mining pools exist:
 |Mining category|Mining Ratio (`$AMAX`)| Description |
 |---|---|---|
 |Blockchain development Mining | 30% |15%: for achiving milestone development: `v1.0`, `v2.0`和`v3.0`; Afterwards, 15%: `DAO` driven development |
@@ -280,10 +280,10 @@ In general following types of mining pools are existing:
 |Ecosystem development mining| 25% | any other beneficiary activities to the ecosystem development |
 
 The ecosystem development mining activities can include but are not limited to the following:
-- registration of accounts and inviting other users to register their accounts
-- provide KYC/KYB service and cerity the accounts onchain
+- registration of accounts and invitation of other users to register accounts
+- provide KYC/KYB service and verify the accounts onchain
 - provide other kinds of oracle services
-- cross some main assets over from other well-know blokchains
+- transfer some main assets over from other well-know blokchains
 
 ## Infrasturcture support for We3
 To achieve Web3，it means a host of internet services can be built and offered in a decentralized manner as well as metered and compensated with crypto tokens.
@@ -296,7 +296,7 @@ Web3 enabling services include but are not limited to the following:
 - DDNS: Decentralized DNS Service
 - DID: Decentralized Identity Service
 
-Armonia core team endeavors to build the above list of decentralized web3 services by effectively metering the health and usage of services with `$AMAX` as the main tokens to incentivize all contributors to web3 enablement.
+Armonia core team endeavors to build the above list of decentralized web3 services by effectively metering the health and usage of services with `$AMAX` as the main token to incentivize all contributors to web3 enablement.
 
 ## xDAO governance
 In a world of decentralization, not only technologies and products need to be constantly discussed and improved but also the interactions within the entire community need to happen in order to decide how to appropriately incentivize those who contributes and if possible to penalize those who create damages or have done things badly to the ecosystem. All these requires both onchain and offchain activites in an orchestrated manner. It is also paramount important to make sure this type of governance adheres to the decentralization principle by getting all stakeholders within the ecosystem to freely participate by making proposals, voting/approving the proposal and execution both onchain and offchain.
