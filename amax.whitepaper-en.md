@@ -299,15 +299,15 @@ Web3 enabling services include but are not limited to the following:
 Armonia core team endeavors to build the above list of decentralized web3 services by effectively metering the health and usage of services with `$AMAX` as the main tokens to incentivize all contributors to web3 enablement.
 
 ## xDAO governance
-In a world of decentralization, not only technologies and products need to be constantly discussed and improved but also the interactions within the entire community need to happen in order to decide how to appropriately incentivize those who contributes and if possible to penalize those who create damages or have done things badly to the ecosystem. All these requires both onchain and offchain activites in an orchestrated manner. It is also paramount important to make sure this type of governance adheres to the decentralization principle by getting all stakeholders within the ecosystem to freely participate by making proposals, voting/approving the proposal and execution both onchain and offchain.
+In a world of decentralization, not only technologies and products need to be constantly discussed and improved but also the interactions within the entire community need to happen in order to decide how to appropriately incentivize those who contributes and if possible to penalize those who create damages or do bad things to the ecosystem. All these requires that both onchain and offchain activites take place in an orchestrated manner. It is of paramount importance to make sure this type of governance adheres to the decentralization principle by getting all stakeholders within the ecosystem to freely participate by making proposals, voting/approving proposals and execution both onchain and offchain.
 
-Therefore it is necessary to establish a decentralized autonomous organization or `DAO` to drive the overall development of Armonia ecosystem by steering the technology development and propelling community growth. As there can be infinite amount of topics, projects and efforts to be led by `DAO` bodies, there may be also interactions between these `DAO` bodies to achieve consenus on common topics or objectives. Hence, a top-level `DAO` to lead all other sub-level `DAO` would be very important in guilding the development of `DAO` bodies. The top `DAO` is named as `Armonia xDAO`.
+Therefore, it is necessary to establish a decentralized autonomous organization or `DAO` to drive the overall development of Armonia ecosystem by steering the technology development and propelling community growth. As there can be infinite amount of topics, projects and efforts to be led by `DAO` bodies, there may be also interactions between these `DAO` bodies to achieve consensus on common topics or objectives. Hence, a top-level `DAO` to lead all other sub-level `DAO` would be very important in guilding the development of `DAO` bodies. The top `DAO` is named as `Armonia xDAO`.
 
 For a `DAO` boday, the common governnance workflow is as follows:
 
 <img src="./assets/amax_dao_process_en.png" width=800 />
 
-- `DAO` body deployes the smart contract which is open sourced to all participates;
+- `DAO` body deployes the smart contract which is open sourced to all participants;
 - Members of `DAO` may be recruited through a certin process and registered with the `DAO` body but it may be also that general public is able to join the body for its managed activities;
 - Members may be distriubted with voting tokens according to the governance protocol;
 - Any member within `DAO` body can make proposals for particular subjects and allocate the funds to reward those who can help fulfill the objectives. The funds may come from the member himself or from the `DAO` treasury reserve;
@@ -327,7 +327,7 @@ Following basic `DAOs` will be founded:
 Technology roadmap:
 - v1.0：Armonia meta chain (WASM based) and the first child chain (EVM based) to be successfuly launched, with meta chain supporting `APOS` consensus algorithm and providing two-way cross-chain ability between `AMC` and the first child chain;
 - v2.0：enable web3.0 resource mining and provide SDK for interfacing with web3 resources;
-- v3.0：provide layer0-base, layer-0, layer-1 etc template implementation to enalbe rapid blockchain development;
+- v3.0：provide layer0-base, layer-0, layer-1, etc. template implementation to enalbe rapid blockchain development;
 
 After Armonia `v3.0` has been achieved, all development will be driven by `developer dao`.
 
